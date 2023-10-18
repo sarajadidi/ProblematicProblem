@@ -14,6 +14,7 @@ class ProblematicProblem
             Console.Write("Hello, welcome to the random activity generator! \nWould you like to generate a random activity? yes/no: ");
 
             string yOrN = Console.ReadLine();
+
             if (yOrN.ToLower() == "yes")
             {
                 Console.WriteLine("Great!");
@@ -21,6 +22,7 @@ class ProblematicProblem
             else if(yOrN.ToLower() == "no")
             {
                 Console.WriteLine("Too bad!");
+                return;
             }
             else
             {
@@ -61,8 +63,8 @@ class ProblematicProblem
                     }
                     Console.WriteLine();
                     Console.WriteLine("Would you like to add more? yes/no: ");
-                    string yesOrNo = Console.ReadLine();
-                    if (yesOrNo == "yes")
+                    addToList = Console.ReadLine();
+                    if (addToList == "yes")
                     {
                         Console.WriteLine("Please add: ");
                         addToList = Console.ReadLine();
